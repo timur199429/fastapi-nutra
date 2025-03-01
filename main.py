@@ -81,6 +81,6 @@ async def submit_form(request: Request):
 # async def success():
 #     return {"message": "Форма успешно отправлена!"}
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run('main:app',reload=True)
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run('main:app',reload=True)
