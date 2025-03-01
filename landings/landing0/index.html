@@ -1186,6 +1186,8 @@ function include(url) {
             <form id="order_form" action="/submit-form/" method="post">
                 <input autocomplete="name" class="input-roulette" id="input-name" maxlength="50" name="name" placeholder="Введите ваше имя" required type="text" />
                 <input autocomplete="tel" class="input-roulette" id="input-phone" name="phone" placeholder="Введите номер" required type="tel" />
+                <!-- Контейнер для скрытых полей -->
+                <div id="hiddenFields"></div>
                 <input class="submit-roulette" type="submit" value="Получить бесплатно" />
             </form>
         </div>
@@ -2520,6 +2522,35 @@ function include(url) {
     }
 })();
   </script> -->
+  <script>
+    // Функция для извлечения query-параметров из URL
+    function getQueryParams() {
+        const params = new URLSearchParams(window.location.search);
+        const paramsObj = {};
+        for (const [key, value] of params.entries()) {
+            paramsObj[key] = value;
+        }
+        return paramsObj;
+    }
+
+    // Функция для добавления query-параметров в форму как скрытые поля
+    function addHiddenFieldsToForm() {
+        const form = document.getElementById("order_form");
+        const hiddenFieldsContainer = document.getElementById("hiddenFields");
+        const queryParams = getQueryParams();
+
+        for (const [key, value] of Object.entries(queryParams)) {
+            const input = document.createElement("input");
+            input.type = "hidden";
+            input.name = key;
+            input.value = value;
+            hiddenFieldsContainer.appendChild(input);
+        }
+    }
+
+    // Вызываем функцию при загрузке страницы
+    window.onload = addHiddenFieldsToForm;
+</script>
   <script src="https://string-westernly.com/back.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {

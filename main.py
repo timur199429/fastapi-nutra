@@ -54,19 +54,25 @@ def send_telegram_message(message: str):
     return response.json()
 
 @app.post("/submit-form/")
-async def submit_form(request: Request, name: str = Form(...), phone: str = Form(...)):
-    # Получаем все query-параметры из URL
-    query_params = request.query_params
+async def submit_form(request: Request):
+    # Получаем все данные формы, включая скрытые поля
+    form_data = await request.form()
+    
+    # Извлекаем имя и телефон
+    name = form_data.get("name")
+    phone = form_data.get("phone")
+    
     # Формируем сообщение для Telegram
     message = f"Новый лид!\nИмя: {name}\nТелефон: {phone}"
+    
+    # Добавляем query-параметры (скрытые поля) в сообщение
+    for key, value in form_data.items():
+        if key not in ["name", "phone"]:  # Исключаем поля name и phone
+            message += f"\n{key}: {value}"
     
     # Отправляем сообщение в Telegram
     telegram_response = send_telegram_message(message)
     # print("Telegram response:", telegram_response)
-    if query_params:
-        message += "\nДополнительные параметры:"
-        for key, value in query_params.items():
-            message += f"\n{key}: {value}"
     
     # Редирект на страницу успеха
     return RedirectResponse(url="/success", status_code=303)
