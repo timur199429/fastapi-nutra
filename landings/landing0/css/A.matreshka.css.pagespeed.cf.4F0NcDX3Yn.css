@@ -1,0 +1,32 @@
+.matreshka__container { display: flex; justify-content: space-around; }
+.matreshka__title { color: rgb(255, 255, 255); font-weight: 700; text-transform: uppercase; text-align: center; margin-bottom: 25px; background-color: rgb(58, 71, 82); padding: 10px 0px; border-radius: 0.5em; font-size: 22px !important; }
+.matreshka__item img { max-width: 250px; width: 100%; }
+@keyframes pop-up-appear {
+  0% { transform: translateY(-2000px); }
+  30% { transform: translateY(100px); }
+  100% { transform: translateY(0px); }
+}
+@keyframes pop-up-appear-before {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+@keyframes pop-up-appear-after {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@media (max-width: 767px) {
+  .matreshka__item img { max-width: 200px; }
+}
+@keyframes pop-up-appear {
+  0% { transform: translateY(-2000px); }
+  30% { transform: translateY(100px); }
+  100% { transform: translateY(0px); }
+}
+@keyframes pop-up-appear-before {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+@keyframes pop-up-appear-after {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
