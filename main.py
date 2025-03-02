@@ -14,6 +14,10 @@ class UserData(BaseModel):
     name: str
     phone: str
 
+@app.get('/')
+async def read_root():
+    return {"message": "ok"}
+
 # Serve the index.html for each landing page
 @app.get("/{landing_name}/")
 async def serve_landing(landing_name: str):
