@@ -1,0 +1,2531 @@
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   «Тензитал»
+  </title>
+  <link href="tov.png" rel="icon" type="image/x-icon"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <link href="css/index.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="css/3e810c5217457fd58869a9990afda35b.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="css/door.css" rel="stylesheet"/>
+  <link href="tov.png" rel="icon" type="image/x-icon"/>
+  <style>
+  </style>
+  <link href="css/A.matreshka.css.pagespeed.cf.4F0NcDX3Yn.css" media="all" rel="stylesheet"/>
+  <style>
+   .randdate {
+            white-space: nowrap;
+        }
+
+        #comments .coment_ava {
+            float: left;
+            margin-right: 15px;
+        }
+
+        #comments .coment_ava img {
+            margin: 0px;
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+        }
+
+        #comments .date {
+            font-weight: normal;
+            background: none;
+            display: inline;
+        }
+
+        .pg {
+            position: relative;
+            padding-left: 65px;
+            margin-bottom: 33px;
+        }
+  </style>
+  <style>
+   .base {
+            padding-top: 0px !important;
+        }
+
+        .base *:not(.door__wrapper *, .order_block *, .spin-result-wrapper *, .cta-button-link, .headline, .headline span) {
+            font-size: 22px !important;
+            line-height: 26px !important;
+        }
+
+        .pg img {
+            margin: 10px 0;
+        }
+
+        body * :not(i) {
+            font-family: Georgia, Times, 'Times New Roman', serif !important;
+
+        }
+
+        .order_block img {
+            width: 100% !important;
+            max-width: 300px !important;
+        }
+
+        .submit-roulette {
+            white-space: normal;
+        }
+
+        .headline {
+            font-weight: bold;
+            font-size: 44px !important;
+            line-height: 48px !important;
+            margin: 20px 0px;
+        }
+
+        @media (max-width: 1019px) {
+            .base {
+                padding-top: 0px !important;
+            }
+
+            .base h1 {
+                margin-top: 0px !important;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .headline {
+                font-size: 28px !important;
+                line-height: 38px !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header_line_2 {
+                display: none;
+            }
+        }
+
+        @media (max-width: 320px) {
+            p {
+                font-size: 16px;
+            }
+        }
+  </style>
+  <meta content="#28a745" name="theme-color"/>
+  <script src="js/jqmin4track.js">
+  </script>
+  <script>
+   window.backScriptType = 3
+ window.backPrelandID = false;
+ window.backPrelandUrl = ''; 
+ window.multiBack = JSON.parse('[{"type":0,"preland_id":0,"land_url":""}]')
+  </script>
+  <script>
+   var redirectUrl = '';
+    var frame = document.createElement('iframe');
+    var backCounter = 0;
+    var disB = false;
+    const bb = new Map([
+        [0, '/src/ruletka_module/'],
+        [1, '//recovery-excitingly.com/back'],
+        [2, '/src/ruletka_module/'],
+        [3, '/src/chest_module/'],
+        [4, '/src/chest_module/'],
+        [5, '/src/ua_ruletka_module/'],
+        [6, '/src/ua_chest_module/'],
+        [7, '//recovery-excitingly.com/back'],
+    ]);
+
+    (function () {
+        window.addEventListener('load', function () {
+            if (window.isInIframe || window.parent.isInIframe || params['exp5'] == 'back') {
+            	return;
+        	}
+            if (window.backScriptType == 10) {
+                disB = true;
+                return;
+            }
+            if (navigator.userAgent.search(/YaBrowser/) > 0) {
+                for (var i = 1; i <= 30; i++) history.pushState({}, "", "");
+                window.onpopstate = function (e) {
+                    back()
+                }
+                return
+            }
+
+            for (var i = 0; 20 > i; ++i) history.pushState({}, "", "");
+            history.back();
+            history.forward();
+            var popCount = 0;
+            window.onpopstate = function (e) {
+                popCount++;
+                if (popCount === 1) { //history.back();
+                    history.go(1);
+                    return;
+                }
+
+                if (popCount === 2) return; //history.go(1);
+                back();
+            }
+        })
+
+        function back() {
+            if (disB) {
+                return
+            }
+
+            document.dispatchEvent(new Event('BackBtnClick'))
+            if (window.parent.backCounter >= 4) {
+                window.parent.backCounter = 4
+            }
+            sendEvent(21 + window.parent.backCounter)
+            check()
+            preparePath(backScriptType)
+            prepareParams()
+            if (backScriptType <= 7 ) {
+	            window.backScriptType = 1;
+            }
+
+            if (!window.isInIframe) {
+                openInIframe();
+                backCounter++
+                return;
+            }
+            if (frames['backFrame']) {
+                frames['backFrame'].window.location.replace(redirectUrl);
+            }
+            backCounter++
+        }
+
+        function check() {
+            try {
+                window.removeEventListener("beforeunload", combackerClose);
+            } catch (f) {
+                console.log("Камбекер не найден.");
+            }
+        }
+
+        function preparePath(val) {
+            var type = typeof val == "object" ? val.type : val
+            var url = bb.get(1);
+            if (bb.has(type)) {
+                redirectUrl = bb.get(type);
+                disB = [2, 4].includes(type)
+                return
+            }
+
+            switch (type) {
+                case 8:
+                    url = window.backPrelandUrl.length > 0 ? window.backPrelandUrl : bb.get(1);
+                    if (!val.land_url) {
+                        break;
+                    }
+
+                    if (val.land_url.includes('redirect')) {
+                        const urlParams = new URL(val.land_url);
+                        params['campaign'] = queryData["campaign"];
+                        url = urlParams.origin + urlParams.pathname;
+                        break;
+                    }
+                    url = val.land_url && val.land_url.length > 0 ? val.land_url : redirectUrl;
+                    if (val.preland_id) {
+                        const lUrl = new URL(val.land_url)
+                        url = window.origin + lUrl.pathname
+                    }
+                    break;
+                case 9:
+                    val = window.multiBack[backCounter]
+                    if (!val) {
+                        val = 99
+                    }
+                    preparePath(val)
+                    window.backScriptType = 9;
+                    if (val.type == 1) {
+                        window.backScriptType = 1;
+                    }
+                    return;
+            }
+            redirectUrl = url;
+        }
+
+        function prepareParams() {
+            params['sid12'] = params['utm_campaign'];
+            if (!params['sid1'] || params['sid1'] == 0) {
+                params['sid1'] = 17;
+            }
+            params['sid16'] = 'bb';
+            params['utm_medium'] = !!params['uid'] ? params['uid'] : '';
+
+            if (window.backScriptType === 1) {
+                switch (params['source']) {
+                    case 11:
+                    case "11":
+                        params['sid1'] = 83716;
+                        params['subid3'] = 83716;
+                        params['utm_medium'] = 12478;
+                        params['sid6'] = params['vcode'];
+                        params['utm_source'] = params['site'];
+                        params['utm_campaign'] = params['sid1'];
+                        break
+                    case 'fun':
+                        params['utm_campaign'] = "132";
+                        break
+                    case 10:
+                    case 21:
+                        params['utm_campaign'] = '17';
+                        break
+                    default:
+                        params['utm_campaign'] = params['sid1'];
+                        break
+                }
+            }
+            paramsToUrl();
+        }
+
+        function paramsToUrl() {
+            redirectUrl += '?';
+            for (var key in params) {
+                if (['data','uid'].includes(key) && window.backScriptType == 1) {
+                    continue
+                }
+                redirectUrl += key + '=' + params[key] + '&';
+            }
+            redirectUrl = redirectUrl.slice(0, -1);
+            // Костыль когда-нибудь убрать
+            redirectUrl += '&uid=' + queryData['vcode']
+        }
+
+        function openInIframe() {
+            document.body.innerHTML = '';
+            frame.setAttribute("name", "backFrame");
+            frame.setAttribute("src", redirectUrl);
+            frame.setAttribute("width", "100%");
+            frame.setAttribute("style", "height:100vh  !important; border:none !important; width:100% !important");
+
+            document.body.setAttribute("style", "overflow:hidden; margin:0px; padding:0;");
+            document.body.appendChild(frame);
+            window.isInIframe = true;
+        }
+    })(window)
+  </script>
+  <script>
+   minPhoneNumber = 9;
+maxPhoneNumber = 14;
+geoPhrases = null;
+
+errors = {
+  'name': 'Введите ваше имя',
+  'phone': 'Введите правильный номер',
+  'phone_validate': 'Введите правильный номер телефона, пример:',
+};
+
+phoneGeo = {
+  'RU': '89284328790',
+  'UA': '+380661825309',
+  'BY': '+375299390559',
+  'AM': '+37494997794',
+  'UZ': '+998906206602',
+  'MD': '+37369164184',
+  'KG': '+996550832595',
+  'DE': '+4989594393',
+  'GE': '+995595649944',
+  'AZ': '+994704340013',
+  'LV': '+37129999083',
+  'LT': '+37060086491',
+  'EE': '+37253051595',
+  'IT': '+39065803423',
+  'ES': '+34943311856',
+  'RO': '+40745369312',    
+  'CZ': '+420774145750',
+  'FR': '+33652326002',
+  'PL': '+48505819311',
+  'BG': '+359877747139',
+  'VN': '+84935868356',
+  'NG': '+2348101614973',   
+  'ID': '6282837737742',
+  'KZ': '+77172440783'
+}
+
+
+function initValidator() {
+  const vars = queryData ?? null;
+  if (!vars) {
+      return
+  }
+
+  geoPhrases = (geoDict && geoDict[vars['country_code']]) ?? geoDict['RU'];
+
+  if (vars['source'] == 110) {
+    let meta = document.createElement('meta');
+    meta.name = "referrer";
+    meta.content = "no-referrer";
+    document.getElementsByTagName('head')[0].appendChild(meta);
+  }
+
+  const getInputs = document.getElementsByClassName('submit-roulette');
+  if (getInputs) {
+    for (val of getInputs) {
+      val.setAttribute('onclick', "return submitAndTarget(this)");
+    }
+    let css = '\
+                .input-error {\
+                    border-color: red;\
+                    transform: translate3d(0, 0, 0);\
+                    animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both;\
+                }\
+                @keyframes shake {\
+                    10%,\
+                    90% {\
+                        transform: translate3d(-1px, 0, 0);\
+                    }\
+                    20%,\
+                    80% {\
+                        transform: translate3d(2px, 0, 0);\
+                    }\
+                    30%,\
+                    50%,\
+                    70% {\
+                        transform: translate3d(-3px, 0, 0);\
+                    }\
+                    40%,\
+                    60% {\
+                        transform: translate3d(3px, 0, 0);\
+                    }\
+                }';
+    let style = document.createElement('style');
+    style.type = 'text/css';
+    if (style.styleSheet) {
+      style.styleSheet.cssText = css;
+    } else {
+      style.appendChild(document.createTextNode(css));
+    }
+    document.body.appendChild(style);
+  }
+  let phoneExample = phoneGeo['RU']
+  if (!vars) {
+    errors['phone_validate'] += phoneExample;
+    return
+  }
+
+  phoneExample = phoneGeo[vars['country_code']] ?? phoneGeo['RU'];
+
+  errors['phone_validate'] += phoneExample;
+    
+    let phoneInput = document.querySelector('[name=phone]');
+    if (phoneInput) {
+      phoneInput.setAttribute('maxlength', geoPhrases['maxPhoneNumber']);
+//  	  phoneInput.setAttribute('type', 'tel');
+      document.querySelector('[name=phone]').addEventListener('keydown', function (event) {
+        event = event || window.event;
+        let key = event.keyCode || event.which;
+        if (20 > key) {
+          return;
+        }
+        var regex = /[\+0-9]|\./;
+        if (!regex.test(event.key || String.fromCharCode(key))) {
+          event.returnValue = false;
+          if (event.preventDefault) event.preventDefault();
+        }
+      });
+    }
+}
+
+
+function submitAndTarget(current) {
+  if (geoPhrases) {
+  	minPhoneNumber = geoPhrases['minPhoneNumber'];
+    maxPhoneNumber = geoPhrases['maxPhoneNumber'];
+  }
+  let setError = function (item, error) {
+    let goal = error;
+    item.classList.add('input-error')
+    item.focus()
+
+    if (geoPhrases) {
+      error = geoPhrases[error];
+    } else if (errors[error]) {
+      error = errors[error]
+    }
+
+    let element;
+    let name = item.getAttribute('name');
+    while (!(element = item.form.getElementsByClassName('form-' + name)[0])) {
+      let nodeError = document.createElement('div');
+      nodeError.setAttribute('class', 'form-' + name)
+      item.parentElement.insertBefore(nodeError, item)
+    }
+    element.innerHTML = '&#8659;' + error + '&#8659;'
+  }
+  let elements = current.parentElement.getElementsByTagName('input');
+  for (i in elements) {
+    let item = elements[i];
+    if (!item.type) {
+      continue
+    }
+    let name = item.getAttribute('name');
+    item.classList.remove('input-error');
+    if (item.hasAttribute('required') && item.value.length == 0) {
+      if (name != 'phone') {
+        setError(item, name)} 
+      else {
+        setError(item, `phone_validate`)  
+      };
+      return false
+    } else {
+      let errorNode = item.form.getElementsByClassName('form-' + name)[0];
+      if (errorNode) {
+        errorNode.parentNode.removeChild(errorNode);
+      }
+    }
+    switch (name) {
+      case 'phone':
+        let value = item.value.replace(/[^+0-9]/g, '')
+        if (minPhoneNumber >= value.length || value.length >= maxPhoneNumber) {
+          setError(item, `phone_validate`)
+          return false;
+        }
+        item.value = value
+        break
+    }
+  }
+  if (typeof (sendParams) == 'undefined') {
+    return
+  }
+
+  if (!sendParams.valid) {
+    return
+  }
+}
+  </script>
+  <script>
+   function rus_date() {
+        var d = new Date();
+        var month = 'январе феврале марте апреле мае июне июле августе сентябре октябре ноябре декабре'.split(' ')[d.getMonth()];
+        document.write(month);
+    };
+
+
+    function rus_date2() {
+        var d = new Date();
+        var month = 'январь февраль март апрель май июнь июль август сентябрь октябрь ноябрь декабрь'.split(' ')[d.getMonth()];
+        document.write(month);
+    };
+  </script>
+  <script>
+   commUrl = '';
+function include(url) {
+    commUrl = url;
+    var script = document.createElement('script');
+    script.src = url;
+    let body = document.getElementsByTagName('body')[0];
+    if (!body) {
+        return;
+    }
+    body.appendChild(script);
+}
+  </script>
+  <script>
+   function initShowHide() {
+        $('.show-img').click(function(event) {
+            var text = $(this).html() == 'Показать' ? 'Скрыть' : 'Показать';
+            $(this).html(text);
+            $(this).parent().parent().find('.shock-img').toggleClass('show');
+        });
+    }
+  </script>
+ </head>
+ <body data-invalid-name-text="Indicate your correct name, please!" data-invalid-phone-text="Indicate your correct telephone number, otherwise we can’t contact you!">
+  <header>
+   <div class="container">
+    <div class="header_line_2">
+     <a class="logo" href="#roulette" style="width: 123px;">
+      <svg class="header__logo-image" fill="#000000" space="preserve" viewbox="0 0 111 31.8" x="0" y="0">
+       <g>
+        <path d="M27.4,0.6v30.7h-8V19.1H8v12.2H0V0.6h8v11.4h11.4V0.6H27.4z">
+        </path>
+        <path d="M63.4,15.9C63.4,25,58,31.8,48,31.8c-9.9,0-15.4-6.8-15.4-15.9C32.7,6.8,38.1,0,48,0
+                            C58,0,63.4,6.8,63.4,15.9z M55.2,15.9c0-5.2-2.4-8.9-7.2-8.9s-7.2,3.7-7.2,8.9c0,5.2,2.4,8.9,7.2,8.9S55.2,21.1,55.2,15.9z">
+        </path>
+        <path d="M84.9,0.6h7.7v11.5H98l4.6-11.5h8l-6.1,15.1l6.5,15.6h-8l-4.9-12h-5.4v12h-7.7v-12h-5.4l-4.9,12h-8
+                            l6.5-15.6L67,0.6h8l4.6,11.5h5.3V0.6z">
+        </path>
+       </g>
+      </svg>
+     </a>
+     <ul class="links">
+      <a href="#roulette">
+       <li>
+        ЭФИР
+       </li>
+       <li>
+        НОВОСТИ
+       </li>
+       <li class="chosen_link">
+        <span style="color: rgb(5, 81, 157);">
+         ШОУ
+        </span>
+       </li>
+       <li>
+        ФИЛЬМЫ И СЕРИАЛЫ
+       </li>
+       <li>
+        СПОРТ
+       </li>
+       <li>
+        ТЕЛЕПРОГРАММА
+       </li>
+      </a>
+     </ul>
+     <a class="wr-search" href="#roulette">
+      <div class="search">
+      </div>
+     </a>
+     <a class="burger" href="#roulette">
+      <img alt="" src="images/burger.png"/>
+     </a>
+    </div>
+   </div>
+  </header>
+  <div class="text_section">
+   <div class="container">
+    <div class="white_base">
+     <div class="base">
+      <p style="font-size: 13px; color: gray;">
+       25.02.2025, 09:04
+      </p>
+      <h1 class="headline" style="font-size: 28px;">
+       «Возраст – не помеха для жизни!» 97-летний академик поделился секретом своего долголетия и отменного здоровья
+      </h1>
+      <p>
+       Известный советский и российский кардиолог, изобретатель, профессор, академик УАН и МАНУ, лауреат
+                        Ленинской премии, Государственной премии СССР, а также множества российский премий Рустам
+                        Каримов ушел на пенсию в 70 лет, однако ни в душе, ни физически пенсионером он не стал. Уже
+                        более 37 лет Рустам Фархадович живет на пенсию, а Пенсионный фонд его практически ненавидит!
+                        Сейчас академику 97 лет, а выглядит и чувствует он себя на 60.
+      </p>
+      <center>
+       <img data-pagespeed-url-hash="387466968" src="images/700xNximage2.jpg.pagespeed.ic.X0BxdxYB7u.jpg" style="margin: 0 auto 5px" width="700"/>
+      </center>
+      <p class="img-desc" style="max-width: 700px; margin-bottom: 30px">
+       С 97-летием Каримова Р. Ф. поздравил сам президент. Фото с рабочего места Каримова Р. Ф.
+      </p>
+      <p>
+       Рустам Фархадович говорит, что
+       <b>
+        секрет долголетия в сосудах
+       </b>
+       . Если они чистые и здоровые, то
+                        можно запросто прожить 120 лет и даже больше, при этом чувствовать себя полностью здоровым. Пока
+                        бывший кардиолог подтверждает свои высказывания.
+      </p>
+      <p>
+       Нашему корреспонденту удалось взять интервью у долгожителя. Каримов Р. Ф. подробно расписал свою
+                        методику очистки сосудов и продления жизни.
+      </p>
+      <p>
+       -
+       <b>
+        Рустам Фархадович, вы неоднократно утверждали, что чистые сосуды – это основа здоровья.
+                            Почему вы так считаете?
+       </b>
+      </p>
+      <p>
+       Это просто. Работа всех внутренних органов и систем зависит от качества кровоснабжения. Ведь, что
+                        такое кровоснабжение – это доставка кислорода и питательных веществ, а также забор углекислого
+                        газа и продуктов обмена к внутренним органам. В детстве, юношестве, молодости мы много
+                        двигаемся, сосуды у нас новые, эластичные, чистые – питание всех органов максимальное. Однако с
+                        возрастом мы двигаемся все меньше, а наши сосуды начинают загрязняться. Связано это с различными
+                        факторами – не только вредными (например, такими как курение, плохое питание, экология,
+                        малоподвижный образ жизни), но и вполне естественными (отложение липидов, например, которое
+                        происходит у всех).
+      </p>
+      <p>
+       А что такое загрязненные сосуды? Представьте трубы, наполненные ржавчиной. Что происходит в
+                        итоге? В итоге повышается давление воды, а сама вода становится невкусной. То же самое
+                        происходит и с сосудами. Когда на них откладывается холестерин или другие вещества, повышается
+                        давление (
+       <b>
+        грязные сосуды – главная причина гипертонии!
+       </b>
+       ), сама кровь получается с
+                        примесями, кровоснабжение становится не таким, каким оно должно быть. В итоге страдают все
+                        органы и системы, а все они составляют человека. Ведь даже кожа – это определенная система.
+      </p>
+      <p>
+       В итоге человек начинает стареть. Если же периодически чистить сосуды, то можно прожить хоть до
+                        120 лет. И при этом у вас ничего не будет болеть – никакие органы, и будет хорошо работать
+                        мозг. То есть, чисткой сосудов можно в значительной мере продлить себе жизнь и здоровье. И это
+                        не только теория. В свое время я рекомендовал это своим пациентам и сейчас практикую сам. Все,
+                        кто прислушался в свое время к моим советам, давно уже пережили своих ровесников.
+      </p>
+      <center>
+       <img data-pagespeed-url-hash="92967047" src="images/700xNximage1.jpg.pagespeed.ic.ii5XtcW52r.jpg" style="margin: 0 auto 5px" width="700"/>
+      </center>
+      <p class="img-desc">
+       Так происходит постепенное загрязнение сосудов. Если вы ни разу их не чистили и вам уже
+                        более 40 лет, то сосуды у вас сильно загрязнены. Скоро это скажется на вашем здоровье, если
+                        уже не сказалось.
+      </p>
+      <br/>
+      <p>
+       -
+       <b>
+        К каким именно патологиям приводит загрязнение сосудов?
+       </b>
+      </p>
+      <p>
+       Как уже говорил, от него страдает весь организм в целом. Но, безусловно, в первую очередь
+                        страдают те органы и системы, которые связаны с кровообращением напрямую – то есть, сама
+                        сердечно-сосудистая система.
+      </p>
+      <p style="padding: 10px; background-color: rgb(234, 220, 192);">
+       <b>
+        Загрязнения сосудов
+                            вызывают такие заболевания, как:
+       </b>
+      </p>
+      <ul style="padding-left: 50px; margin-bottom: 30px; list-style-type: decimal;">
+       <li>
+        <b>
+         Атеросклеротическая болезнь сосудов.
+        </b>
+        Сосуды перестают функционировать совсем: мелкие
+                            сосуды забиваются полностью, а в крупных наблюдаются большие отложения холестерина;
+       </li>
+       <li>
+        <b>
+         Ишемическая болезнь сердца.
+        </b>
+        Возникает из-за регулярного дефицита крови в венечных
+                            сосудах, который, в свою очередь, развивается на фоне загрязнения сосудов;
+       </li>
+       <li>
+        <b>
+         Инсульт.
+        </b>
+        При стойком нарушении кровоснабжения тканей головного мозга начинается
+                            отмирание нервных окончаний, что приводит к потере некоторых функций;
+       </li>
+       <li>
+        <b>
+         Гипертония.
+        </b>
+        При сужении просвета в сосудах из-за загрязнения повышается давление;
+       </li>
+       <li>
+        <b>
+         Варикозное расширение вен.
+        </b>
+        Происходит не только на ногах (что часто волнует женщин),
+                            но и внутри организма. Как одно из последствий варикозного расширения вен – геморрой;
+       </li>
+       <li>
+        <b>
+         Венозные и артериальные тромбозы.
+        </b>
+        При длительном загрязнении в сосудах может
+                            образоваться тромб, что приводит к полному отмиранию сосуда, что может привести, в свою
+                            очередь, к отмиранию отдельных клеток в том или ином органе. Если тромб оторвется и попадет
+                            в кровь, это может привести к закупорке сосудов в сердце – а это инфаркт, который в 70%
+                            случаев заканчивается смертью;
+       </li>
+      </ul>
+      <p>
+       И ведь такое случается повсеместно! От сердечно-сосудистых заболеваний умирает в 4 раза больше
+                        людей, чем от всех других причин вместе взятых. Врачи знают об этом, знают, что надо чистить
+                        сосуды, но почему-то такой практики нет в российской медицине. Многие врачи при гипертонии
+                        выписывают таблетки для снижения давления. Однако они не лечат, они дают временный эффект. А
+                        надо именно чистить сосуды. Кстати, на Западе этим занимаются все люди после 35-40 лет уже
+                        больше полвека. То есть об очистке сосудов там знаю все. Почему у нас нет – для меня это
+                        остается большим вопросом.
+      </p>
+      <p>
+       -
+       <b>
+        Существуют ли какие-нибудь симптомы, по которым можно понять, что сосуды загрязнены?
+       </b>
+      </p>
+      <p>
+       Да, конечно. К основным симптомам можно отнести:
+      </p>
+      <ul style="padding-left: 50px; margin-bottom: 30px; list-style-type: decimal;">
+       <li>
+        Мигрени;
+       </li>
+       <li>
+        Ухудшение памяти;
+       </li>
+       <li>
+        Хроническую усталость;
+       </li>
+       <li>
+        Бессонницу;
+       </li>
+       <li>
+        Проблемы в интимной сфере;
+       </li>
+       <li>
+        Ухудшение зрения и слуха;
+       </li>
+       <li>
+        Повышенное давление;
+       </li>
+       <li>
+        Одышку и стенокардию;
+       </li>
+       <li>
+        Бледную кожу на ногах;
+       </li>
+       <li>
+        Боль в мышцах и суставах;
+       </li>
+      </ul>
+      <p style="padding: 10px; background-color: rgb(234, 220, 192);">
+       <b>
+        Однако, даже если у вас нет этих
+                            симптомов, очистку сосудов все равно надо выполнять хотя бы раз в 5 лет после 30 лет жизни.
+                            Здоровье будет в этом случае просто богатырским.
+       </b>
+      </p>
+      <p>
+       На самом деле сосуды очень быстро загрязняются, особенно у людей старшего возраста. Для этого
+                        вовсе не нужно есть целыми днями бургеры или картошку фри. Достаточно съесть одну сосиску или
+                        яичницу, чтобы какое-то количество холестерина отложилось в сосудах. Со временем загрязнения
+                        накапливаются.
+      </p>
+      <p>
+       -
+       <b>
+        Не могли бы вы рассказать свой секрет очистки сосудов?
+       </b>
+      </p>
+      <p>
+       До недавнего времени процесс очистки сосудов у меня занимал несколько месяцев. Я сам собирал
+                        травы, искал их на рынке или заказывал в интернете, а потом готовил отвары из них. Сейчас этого
+                        не делаю, так как недавно мои коллеги из Московского НИИ кардиологии создали очень хорошее и недорогое средство, предназначенное для очистки сосудов. Называется оно «Тензитал». Вообще оно предназначено для нормализации артериального давления и лечения гипертонии, но эта нормализация как раз и происходит за счет очистки сосудов. Поэтому для наших целей оно подходит как нельзя лучше.
+      </p>
+      <center>
+       <img data-pagespeed-url-hash="4049594916" src="images/tov.png" style="width: 100%; max-width: 300px; margin: 0 auto 5px"/>
+      </center>
+      <p class="img-desc">
+       «Тензитал» очень хорошее средство, которое позволяет очистить даже сильно загрязненные сосуды
+                        за 1-2 недели регулярного приема.
+      </p>
+      <br/>
+      <p style="padding: 10px; background-color: rgb(234, 220, 192);">
+       <b>
+        Еще хочу отметить, что это средство не содержит химии, а только сильноконцентрированные вытяжки из полезных для
+                            очистки сосудов растений, поэтому оно не только не вредное для организма, но и очень полезное.
+       </b>
+      </p>
+      <p>
+       По старой памяти ко мне еще обращаются пациенты, в том числе по поводу очистки сосудов. В
+                        последнее время я рекомендую только это средство. Оно помогает всем и очень хорошо.
+      </p>
+      <p>
+       Есть официальная статистика на сайте НИИ Кардиологии по очистке сосудов, которая была получена по
+                        результатам клинических исследований. Всего в исследовании участвовало около 2000 пациентов. Все
+                        они принимали «Тензитал» курсом.
+      </p>
+      <p>
+       Результаты исследований:
+      </p>
+      <ul style="padding-left: 50px; margin-bottom: 30px; list-style-type: decimal;">
+       <li>
+        Нормализация давления в течение 1-2 дней приема средства – 99% исследуемых;
+       </li>
+       <li>
+        Нормализация сердечного ритма за курс – 97% исследуемых;
+       </li>
+       <li>
+        Полная очистка сосудов от холестерина за курс – 99% исследуемых;
+       </li>
+       <li>
+        Повышения эффективности лечения хронических заболеваний – 99% исследуемых;
+       </li>
+       <li>
+        Улучшение здоровья в целом – 100% исследуемых;
+       </li>
+       <li>
+        Отсутствие побочных эффектов от приема средства – 100% исследуемых;
+       </li>
+      </ul>
+      <p>
+       -
+       <b>
+        Сколько стоит «Тензитал», и где его можно приобрести?
+       </b>
+      </p>
+      <p>
+       Вы, наверное, знаете, что я сам пенсионер и для меня многие средства дороги сейчас. Потому я не
+                        стал бы рекомендовать дорогое средство. «Тензитал» очень доступное средство, особенно сейчас –
+       <b>
+        ДО
+        <script type="text/javascript">
+         var appendNull = function(num) {
+                                    return num < 10 ? 0 + num.toString() : num;
+                                };
+                                d = new Date();
+                                p = new Date(d.getTime() - 0 * 86400000);
+                                monthb = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
+                                document.write(appendNull(p.getDate()) + '.' + monthb[p.getMonth()] + '.' + p.getFullYear());
+        </script>
+        (включительно) «Тензитал» МОЖНО ПОЛУЧИТЬ СО СКИДКОЙ ДО 100%.
+       </b>
+      </p>
+      <p>
+       Средство является основным в Российской программе борьбы с гипертонией, финансируемой
+                        государством. По этой программе это средство может получить любой желающий по льготной цене
+                        бесплатно.
+      </p>
+      <p>
+       <b>
+        Подробнее о том, как получить «Тензитал» с доставкой в любую точку страны
+       </b>
+      </p>
+      <p>
+       Для получения средства «Тензитал» необходимо:
+      </p>
+      <ul style="padding-left: 50px; margin-bottom: 30px; list-style-type: decimal;">
+       <li>
+        Участвовать в розыгрыше ниже;
+       </li>
+       <li>
+        Заполнить заявку в форме;
+       </li>
+       <li>
+        После этого вам перезвонит менеджер для уточнения адреса доставки;
+       </li>
+       <li>
+        Через 1-4 дня (необходимых на доставку) нужно будет прийти на почту и получить «Тензитал»;
+       </li>
+      </ul>
+      <p>
+       Для поддержания чистоты сосудов я рекомендую проходить курс очистки 1 раз в 1-2 года. Особенно
+                        это важно делать людям в возрасте. В этом случае вы в значительной мере сможете укрепить свое
+                        здоровье и отсрочить появление старости. Ведь чистые сосуды это залог здоровья.
+      </p>
+      <p>
+       -
+       <b>
+        Большое спасибо вам Рустам Фархадович, за столь подробное интервью.
+       </b>
+      </p>
+      <p>
+       Уже при личной беседе Каримов Р. Ф. признался, что до сих пор сажает все на даче и помогает детям,
+                        которые уже тоже пенсионеры. Его жена Фатыма тоже долгожительница – ей 99 лет. Чистят сосуды они
+                        оба ежегодно. Если бы не делали этого, то, по мнению академика, давно бы умерли, как и все их
+                        ровесники.
+      </p>
+      <div class="custom">
+       <h3>
+        Условия участия в розыгрыше:
+       </h3>
+       <ul>
+        <li>
+         <b>
+          Быть гражданином РФ старше 18 лет.
+         </b>
+        </li>
+       </ul>
+       <p>
+        Средство по льготной стоимости распространяется только среди совершеннолетних граждан РФ.
+       </p>
+       <br/>
+       <ul>
+        <li>
+         <b>
+          Приобретать только для личного использования.
+         </b>
+        </li>
+       </ul>
+       <p>
+        Это нужно для борьбы с перекупщиками.
+       </p>
+       <br/>
+       <ul>
+        <li>
+         <b>
+          Только через
+          <a href="#roulette">
+           официальный розыгрыш
+          </a>
+          .
+         </b>
+        </li>
+       </ul>
+       <p>
+        В связи с ограниченным количеством продукта, средство реализуется через официальный розыгрыш
+                            - размещен ниже на странице.
+       </p>
+      </div>
+      <p id="roll" style="padding: 10px; background: #EADCC0; border-radius: 10px;">
+       <b>
+        Важно!
+       </b>
+       Был сделан вывод, что
+       <span style=" font-weight: bold; text-transform: lowercase;">
+        <script>
+         d = new Date();
+                                p = new Date(d.getTime() + (86400 * 1000 * 1));
+                                monthA = "январь,февраль,март,апрель,май,июнь,июль,август,сентябрь,октябрь,ноябрь,декабрь".split(",");
+                                document.write(monthA[p.getMonth()]);
+        </script>
+       </span>
+       - лучшее время для начала восстановления давления. Благодаря
+                        стабилизации средней температуры ускоряется обмен веществ, усиливается циркуляция крови в
+                        организме, увеличивается приток крови и кислорода во внутренние органы и эффект от использования средства возрастает.
+       <span style="font-weight: bold;">
+        Восстановление давления происходит на 67% быстрее, чем
+                            это происходило бы в другое время года.
+       </span>
+      </p>
+      <p>
+       <b>
+        ВНИМАНИЕ:
+       </b>
+       <b>
+        В рамках акции от дистрибьютора,
+        <a href="#roulette" style="color: rgb(65, 147, 212);">
+         <b>
+          «Тензитал»
+         </b>
+        </a>
+        можно получить
+                            со скидкой от 30% до 100%. Для этого нужно открыть дверь и
+                            выиграть свою скидку, заполнить форму заказа, размещенную ниже, до
+        <script type="text/javascript">
+         var appendNull = function(num) {
+                                    return num < 10 ? 0 + num.toString() : num;
+                                };
+                                d = new Date();
+                                p = new Date(d.getTime() - 0 * 86400000);
+                                monthb = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
+                                document.write(appendNull(p.getDate()) + '.' + monthb[p.getMonth()] + '.' + p.getFullYear());
+        </script>
+        (включительно). Количество акционных товаров
+                            ограничено!
+       </b>
+      </p>
+      <center>
+       <script>
+        const widgetDoorsSale = '100%';
+                            const widgetDoorsSale2 = '50%';
+                            const widgetDoorsSale3 = '30%';
+                            const widgetDoorsGood = '«Тензитал»';
+       </script>
+       <style>
+        .door__wrapper .door__container {
+        display: flex !important;
+        justify-content: space-around !important;
+
+    }
+
+    .door__wrapper .box__door {
+        perspective: 500px !important;
+        position: relative !important;
+    }
+
+    .door__wrapper .box__door,
+    .door__wrapper .door {
+        width: 190px !important;
+        height: 400px !important;
+        box-shadow: inset -1px -1px 0px 1px #191919, inset 1px 1px 0px 1px #191919 !important;
+    }
+
+    .door__wrapper .door,
+    .door__wrapper .hi {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .door__wrapper .door {
+        background-image: url(./images/door1.png) !important;
+        background-repeat: no-repeat !important;
+        background-size: 100% !important;
+        transform: rotateY(0deg) !important;
+        display: inline-block !important;
+        transition: all 0.75s ease !important;
+        transform-origin: 0% 0% !important;
+        cursor: pointer !important;
+    }
+
+    #door__2 {
+        background-image: url(./images/door2.png) !important;
+    }
+
+    #door__3 {
+        background-image: url(./images/door3.png) !important;
+    }
+
+    .door__wrapper .door:hover {
+        transform: rotateY(-30deg) !important;
+    }
+
+    .door__wrapper .door.open {
+        transform: rotateY(-85deg) !important;
+    }
+
+    .door__wrapper .door__sales {
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%);
+        font-size: 55px !important;
+        line-height: 57px !important;
+        font-weight: 700 !important;
+        color: red !important;
+        border-radius: 30px !important;
+        padding: 30px 5px !important;
+        box-shadow: 0px 1px 2px 2px #7F7878 !important;
+        width: 85% !important;
+        min-width: 70px !important;
+    }
+
+
+    .door__wrapper .door__title {
+        color: #fff !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        text-align: center !important;
+        font-size: 22px !important;
+        margin-bottom: 25px !important;
+        background-color: #3A4752 !important;
+        padding: 10px 0 !important;
+        border-radius: 0.5em !important;
+    }
+
+    @media (max-width: 840px) {
+        .door__wrapper .door__sales {
+            font-size: 20px !important;
+            line-height: 22px !important;
+            font-weight: 700 !important;
+            color: red !important;
+            border-radius: 30px !important;
+            width: 65% !important;
+            min-width: 50px !important;
+        }
+
+        .door__wrapper .box__door,
+        .door__wrapper .door {
+            width: 95px !important;
+            height: 200px !important;
+        }
+
+        .door__wrapper .door {
+            background-image: url(../widgets/doors/images/media_door.png);
+        }
+
+        #door__2 {
+            background-image: url(../widgets/doors/images/media_door2.png);
+        }
+
+        #door__3 {
+            background-image: url(../widgets/doors/images/media_door3.png);
+        }
+    }
+
+    @media(max-width:360px) {
+        .door__wrapper .box__door+.box__door {
+            margin-left: 15px !important;
+        }
+
+        .door__wrapper .door__sales {
+            font-size: 19px !important;
+            line-height: 21px !important;
+            font-weight: 700 !important;
+            color: red !important;
+            border-radius: 30px !important;
+        }
+
+    }
+       </style>
+       <div id="roulette">
+       </div>
+       <center>
+        <div class="door__wrapper">
+            <h2 class="door__title">
+                Угадай за какой дверью скидка
+                <span id="discount">
+                    <script>
+                        document.write(widgetDoorsSale);
+                    </script>
+                </span>
+            </h2>
+            <div class="door__container">
+                <div class="box__door" onclick="openDoor()">
+                    <div class="hi">
+                        <p class="door__sales" id="door__sales2"></p>
+                    </div>
+                    <div class="door" id="door__2"></div>
+                </div>
+                <div class="box__door" onclick="openDoor()">
+                    <div class="hi">
+                        <p class="door__sales" id="door__sales1"></p>
+                    </div>
+                    <div class="door" id="door__1"></div>
+                </div>
+                <div class="box__door" onclick="openDoor()">
+                    <div class="hi">
+                        <p class="door__sales" id="door__sales3"></p>
+                    </div>
+                    <div class="door" id="door__3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="order_block default_order-block">
+            <img alt="img" src="images/tov.png" />
+            <h3>
+                Все что Вам нужно — это ввести имя и номер телефона.
+                <br />
+                Поторопитесь! У Вас осталось времени:
+                <br />
+                <span class="time_remains" id="min">10</span>:
+                <span class="time_remains" id="sec">00</span>
+            </h3>
+            <link href="css/styles.css" rel="stylesheet" type="text/css" />
+            <form id="order_form" action="/submit-form/" method="post">
+                <input autocomplete="name" class="input-roulette" id="input-name" maxlength="50" name="name" placeholder="Введите ваше имя" required type="text" />
+                <input autocomplete="tel" class="input-roulette" id="input-phone" name="phone" placeholder="Введите номер" required type="tel" />
+                <input class="submit-roulette" type="submit" value="Получить бесплатно" />
+            </form>
+        </div>
+        <div class="spin-result-wrapper default_spin-result-wrapper" style="display: none;">
+            <div class="pop-up-window">
+                <div class="close-popup"></div>
+                <p class="ruletka-p pop-up-text">
+                    Вы можете забрать
+                    <script>
+                        document.write(widgetDoorsGood);
+                    </script>
+                    <span class="danger-text">
+                        со скидкой
+                        <script>
+                            document.write(widgetDoorsSale);
+                        </script>
+                        .
+                    </span>
+                </p>
+                <a class="pop-up-button" href="#roulette">OK</a>
+            </div>
+        </div>
+    </center>
+       <script>
+        var customTitle = '';
+
+    $(document).ready(function () {
+            var o = document.querySelectorAll(".door"),
+                r = document.querySelectorAll(".door__sales"),
+                c = (document.querySelector(".door__wrapper"),
+                    document.querySelector(".spin-result-wrapper")),
+                i = (document.querySelector(".pop-up-button"),
+                    document.querySelector(".order_block"),
+                    document.getElementById("door__1")),
+                u = document.getElementById("door__2"),
+                l = document.getElementById("door__3"),
+                s = document.getElementById("door__sales1"),
+                a = document.getElementById("door__sales2"),
+                d = document.getElementById("door__sales3"),
+                p = $("#discount").text();
+
+            function m(e) {
+                e.currentTarget.classList.add("open");
+                setTimeout(function () {
+                    c.style.display = "block"
+                }, 2500);
+
+                for (var t = 0; t < r.length; t++) {
+                    var withoutProcent = widgetDoorsSale.slice(0, -1);
+                    var addOrNotProcent = isNaN(parseInt(widgetDoorsSale)) ? widgetDoorsSale : withoutProcent + '%';
+
+                    if (i.classList.contains("open")) {
+                        s.innerHTML = addOrNotProcent;
+                        a.innerHTML = (typeof widgetDoorsSale2 !== "undefined") ? widgetDoorsSale2 + '' : "50%";
+                        d.innerHTML = (typeof widgetDoorsSale3 !== "undefined") ? widgetDoorsSale3 + '' : "25%";
+                    } else if (u.classList.contains("open")) {
+                        a.innerHTML = addOrNotProcent;
+                        s.innerHTML = (typeof widgetDoorsSale3 !== "undefined") ? widgetDoorsSale3 + '' : "25%";
+                        d.innerHTML = (typeof widgetDoorsSale2 !== "undefined") ? widgetDoorsSale2 + '' : "50%";
+                    } else if (l.classList.contains("open")) {
+                        s.innerHTML = (typeof widgetDoorsSale2 !== "undefined") ? widgetDoorsSale2 + '' : "50%";
+                        d.innerHTML = addOrNotProcent;
+                        a.innerHTML = (typeof widgetDoorsSale3 !== "undefined") ? widgetDoorsSale3 + '' : "25%";
+                    }
+                };
+                for (var t = 0; t < o.length; t++)
+                    ! function (e) {
+                        o[e].classList.contains("open") || setTimeout(function () {
+                            o[e].classList.add("open")
+                        }, 1500)
+                    }(t);
+                for (var n = 0; n < o.length; n++)
+                    o[n].removeEventListener("click", m)
+                for (var n = 0; n < o.length; n++)
+                    o[n].removeEventListener("touchend", m)
+            }
+
+            for (var n = 0; n < o.length; n++)
+                o[n].addEventListener("click", m)
+
+            var date = new Date();
+            $('.date').text(date.toLocaleString().split(',')[0])
+            $(".date-n").each(function () {
+                var d = new Date();
+                d.setDate(d.getDate() - $(this).data("num"));
+                $(this).text(d.toLocaleString().split(',')[0])
+            })
+        }),
+        $(".close-popup, .pop-up-button").click(function (e) {
+            e.preventDefault(),
+                $(".spin-result-wrapper").fadeOut()
+        });
+
+    function openDoor() {
+        setTimeout(function () {
+            $(".door__wrapper").fadeOut(),
+                $(".order_block").fadeIn(),
+                start_timer()
+        }, 3e3)
+    }
+
+    if (typeof customDoorsForm !== "undefined") {
+        $('.default_order-block').remove();
+        $('.default_spin-result-wrapper').remove();
+
+        switch (customDoorsForm) {
+            case 'id':
+                customTitle = 'Tebak pintu mana yang ada diskon ' + widgetDoorsSale;
+                break;
+            case 'ph':
+                customTitle = 'HUlaan KUNG ANONG PINTO ANG ' + widgetDoorsSale + ' OFF';
+                break;
+            case 'th':
+                customTitle = 'เดาว่าประตูไหนลด ' + widgetDoorsSale;
+                break;
+            case 'pl':
+                customTitle = 'ZGADNIJ, ZA KTÓRYMI DRZWIAMI ZNAJDUJE SIĘ ZNIŻKA ' + widgetDoorsSale;
+                break;
+            case 'es':
+                customTitle = 'ADIVINA QUÉ PUERTA ESTÁ ' + widgetDoorsSale + ' ABIERTA.';
+                break;
+            case 'ro':
+                customTitle = 'GHICI CARE UȘĂ ARE O REDUCERE DE ' + widgetDoorsSale;
+                break;
+            case 'de':
+                customTitle = 'RATEN SIE, HINTER WELCHER TÜR SICH DER RABATT BEFINDET ' + widgetDoorsSale;
+                break;
+            case 'it':
+                customTitle = 'INDOVINA LA PORTA DIETRO LA QUALE C\'E\' LO SCONTO DEL  ' + widgetDoorsSale;
+                break;
+            case 'pe':
+                customTitle = 'ADIVINA QUÉ PUERTA DESCUENTO ' + widgetDoorsSale;
+                break;
+            case 'ru':
+                customTitle = 'Угадай за какой дверью скидка ' + widgetDoorsSale;
+                break;
+            case 'hu':
+                customTitle = 'Találd ki, melyik ajtó mögött van a kedvezmény ' + widgetDoorsSale;
+                break;
+            case 'bg':
+                customTitle = 'ПОЗНАЙТЕ ВРАТАТА, ЗАД КОЯТО ИМА ' + widgetDoorsSale + ' ОТСТЪПКА?';
+                break;
+            default:
+                customTitle = 'Guess which door the discount is behind ' + widgetDoorsSale;
+        }
+
+        $('.door__title').text(customTitle);
+    }
+       </script>
+      </center>
+      <br/>
+     </div>
+     <div class="comments">
+      <div class="base">
+       <h2>
+        Комментарии:
+       </h2>
+       <div id="comments">
+        <div class="vk-comment-load">
+         <div class="vk-comment-top">
+          <div class="vk-avatar">
+           <img src="images/1.webp"/>
+          </div>
+          <div class="vk-comment-name">
+           Марина Тищенко
+          </div>
+          <div class="vk-comment-city">
+           Москва
+          </div>
+          <div class="like-block">
+           <div class="like">
+            <img alt="" src="images/like.png"/>
+            <span class="like__count">
+             2
+            </span>
+           </div>
+           <div class="dislike">
+            <img alt="" src="images/dislike.png"/>
+            <span class="dislike__count">
+             0
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="vk-comment-text">
+          <p>
+           Спасибо. Очень интересно. «Тензитал» заказала, мелочь заплатила. Иногда наше государство приятно удивляет.
+          </p>
+          <img alt="" class="otz" src="images/x123.jpg.pagespeed.ic.20wAoHMp_m.jpg"/>
+         </div>
+        </div>
+        <div class="vk-comment-load">
+         <div class="vk-comment-top">
+          <div class="vk-avatar">
+           <img src="images/2.webp"/>
+          </div>
+          <div class="vk-comment-name">
+           Владислав Богданов
+          </div>
+          <div class="vk-comment-city">
+           Брянск
+          </div>
+          <div class="like-block">
+           <div class="like">
+            <img alt="" src="images/like.png"/>
+            <span class="like__count">
+             5
+            </span>
+           </div>
+           <div class="dislike">
+            <img alt="" src="images/dislike.png"/>
+            <span class="dislike__count">
+             0
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="vk-comment-text">
+          <p>
+           Я один из тех, кто уже заказал «Тензитал» и успел его
+                                        испытать. У меня гипертония была 7 лет. Чтобы давление было нормальным,
+                                        уже и не помню такого. По совету лечащего врача решил почистить сосуды.
+                                        После месячного приема «Тензитала» давление нормализовалось! Сейчас уже 2
+                                        месяца живу без гипертонии. Это совсем другая жизнь. Стал себя в разы
+                                        лучше чувствовать. Пока по скидке заказал для друзей. Рекомендую всем,
+                                        это замечательное средство – тем более, что его можно получить бесплатно!
+          </p>
+          <!-- <img src="images/otz2.jpg" alt="" class="otz"> -->
+         </div>
+        </div>
+        <div class="vk-comment-load">
+         <div class="vk-comment-top">
+          <div class="vk-avatar">
+           <img src="images/3.webp"/>
+          </div>
+          <div class="vk-comment-name">
+           Лола Митковская
+          </div>
+          <div class="vk-comment-city">
+           Кировская область
+          </div>
+          <div class="like-block">
+           <div class="like">
+            <img alt="" src="images/like.png"/>
+            <span class="like__count">
+             43
+            </span>
+           </div>
+           <div class="dislike">
+            <img alt="" src="images/dislike.png"/>
+            <span class="dislike__count">
+             0
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="vk-comment-text">
+          <p>
+           Спасибо. Выписала. Удобно, что доставка по почте – могут
+                                        привести в любую точку страны.
+          </p>
+         </div>
+        </div>
+        <div class="vk-comment-load">
+         <div class="vk-comment-top">
+          <div class="vk-avatar">
+           <img src="images/4.webp"/>
+          </div>
+          <div class="vk-comment-name">
+           Михаил Коваленко
+          </div>
+          <div class="vk-comment-city">
+           Уфа
+          </div>
+          <div class="like-block">
+           <div class="like">
+            <img alt="" src="images/like.png"/>
+            <span class="like__count">
+             29
+            </span>
+           </div>
+           <div class="dislike">
+            <img alt="" src="images/dislike.png"/>
+            <span class="dislike__count">
+             0
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="vk-comment-text">
+          <p>
+           Тоже есть опыт использования «Тензитала». Заметные улучшения
+                                        в здоровье и самочувствии. Даже как будто помолодел.
+          </p>
+         </div>
+        </div>
+        <div class="vk-comment-load">
+         <div class="vk-comment-top">
+          <div class="vk-avatar">
+           <img src="images/5.webp"/>
+          </div>
+          <div class="vk-comment-name">
+           Виктор Кубицкий
+          </div>
+          <div class="vk-comment-city">
+           Москва
+          </div>
+          <div class="like-block">
+           <div class="like">
+            <img alt="" src="images/like.png"/>
+            <span class="like__count">
+             5
+            </span>
+           </div>
+           <div class="dislike">
+            <img alt="" src="images/dislike.png"/>
+            <span class="dislike__count">
+             0
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="vk-comment-text">
+          <p>
+           А я вчера уже забрал. Будем чиститься оба с женой.
+                                        Проходили обследование недавно – сосуды в ужасном состоянии из-за
+                                        холестрина
+          </p>
+         </div>
+        </div>
+        <div class="vk-comment-load">
+         <div class="vk-comment-top">
+          <div class="vk-avatar">
+           <img src="images/6.webp"/>
+          </div>
+          <div class="vk-comment-name">
+           Роман Артилович
+          </div>
+          <div class="vk-comment-city">
+           Воркута
+          </div>
+          <div class="like-block">
+           <div class="like">
+            <img alt="" src="images/like.png"/>
+            <span class="like__count">
+             17
+            </span>
+           </div>
+           <div class="dislike">
+            <img alt="" src="images/dislike.png"/>
+            <span class="dislike__count">
+             0
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="vk-comment-text">
+          <p>
+           Помогает оставаться сильным и здоровым. У меня ни одной болячки нет, а
+                                        многие мои ровесники уже давно в могиле. Я даже сексом до сих пор
+                                        занимаюсь, извините за подробности. Чистить сосуды нужно!
+          </p>
+         </div>
+        </div>
+        <div class="vk-comment-load">
+         <div class="vk-comment-top">
+          <div class="vk-avatar">
+           <img src="images/8.webp"/>
+          </div>
+          <div class="vk-comment-name">
+           Роксана Кедоровна
+          </div>
+          <div class="vk-comment-city">
+           Саратов
+          </div>
+          <div class="like-block">
+           <div class="like">
+            <img alt="" src="images/like.png"/>
+            <span class="like__count">
+             5
+            </span>
+           </div>
+           <div class="dislike">
+            <img alt="" src="images/dislike.png"/>
+            <span class="dislike__count">
+             0
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="vk-comment-text">
+          <p>
+           Принимала «Тензитал» в прошлом месяце. Давление поднималось
+                                        изредка, иногда был неровный ритм сердца. Пила его примерно 2-2,5
+                                        недели. Давление перестало повышаться. Чувствую себя полностью здоровым
+                                        человеком.
+          </p>
+          <img alt="" class="otz" src="images/xphoto_2020-09-03_12-05-33.jpg.pagespeed.ic.CDPIeAEPq8.jpg"/>
+         </div>
+        </div>
+        <div class="vk-comment-load">
+         <div class="vk-comment-top">
+          <div class="vk-avatar">
+           <img src="images/9.webp"/>
+          </div>
+          <div class="vk-comment-name">
+           Карина Шаришанова
+          </div>
+          <div class="vk-comment-city">
+           Санкт-Петербург
+          </div>
+          <div class="like-block">
+           <div class="like">
+            <img alt="" src="images/like.png"/>
+            <span class="like__count">
+             13
+            </span>
+           </div>
+           <div class="dislike">
+            <img alt="" src="images/dislike.png"/>
+            <span class="dislike__count">
+             0
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="vk-comment-text">
+          <p>
+           Боролась с высоким давлением этим средством. Высокое давление
+                                        уже давно стало моим спутником жизни. Со временем еще добавился сахарный
+                                        диабет и проблемы с почками. Очень плохая память и зрение. За всю жизнь
+                                        лечилась, чем могла. Толком ничего не помогло. Решила попробовать
+                                        «Тензитал». Первый раз выписываю через интернет средства, но все
+                                        оказалось просто.
+          </p>
+         </div>
+        </div>
+        <div class="vk-comment-load">
+         <div class="vk-comment-top">
+          <div class="vk-avatar">
+           <img src="images/10.webp"/>
+          </div>
+          <div class="vk-comment-name">
+           Ирина Пановенко
+          </div>
+          <div class="vk-comment-city">
+           Московская область
+          </div>
+          <div class="like-block">
+           <div class="like">
+            <img alt="" src="images/like.png"/>
+            <span class="like__count">
+             36
+            </span>
+           </div>
+           <div class="dislike">
+            <img alt="" src="images/dislike.png"/>
+            <span class="dislike__count">
+             0
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="vk-comment-text">
+          <p>
+           Спасибо! Смотрела передачу про это средство недавно. Там
+                                        его многие хвалили врачи. Тоже говорили, что очистка сосудов жизненно
+                                        важна.
+          </p>
+         </div>
+        </div>
+        <div class="vk-comment-load">
+         <div class="vk-comment-top">
+          <div class="vk-avatar">
+           <img src="images/11.webp"/>
+          </div>
+          <div class="vk-comment-name">
+           Константин Пузенков
+          </div>
+          <div class="vk-comment-city">
+           Севастополь
+          </div>
+          <div class="like-block">
+           <div class="like">
+            <img alt="" src="images/like.png"/>
+            <span class="like__count">
+             1
+            </span>
+           </div>
+           <div class="dislike">
+            <img alt="" src="images/dislike.png"/>
+            <span class="dislike__count">
+             0
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="vk-comment-text">
+          <p>
+           Средство отличное. Полностью подтверждаю! Было давление постоянное 160
+                                        на 110. Жил с ним несколько лет. После курса приема давление стало 125
+                                        на 80. Здоровье улучшилось в разы.
+          </p>
+         </div>
+        </div>
+        <div class="vk-comment-load">
+         <div class="vk-comment-top">
+          <div class="vk-avatar">
+           <img src="images/12.webp"/>
+          </div>
+          <div class="vk-comment-name">
+           Анастасия Галкова
+          </div>
+          <div class="vk-comment-city">
+           Нижний Новгород
+          </div>
+          <div class="like-block">
+           <div class="like">
+            <img alt="" src="images/like.png"/>
+            <span class="like__count">
+             41
+            </span>
+           </div>
+           <div class="dislike">
+            <img alt="" src="images/dislike.png"/>
+            <span class="dislike__count">
+             0
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="vk-comment-text">
+          <p>
+           Прочитала подробнее о средстве «Тензитал» на сайте.
+                                        Впечатляет!
+          </p>
+          <!-- <img src="images/otz4.jpg" alt="" class="otz"> -->
+         </div>
+        </div>
+        <div class="vk-comment-load">
+         <div class="vk-comment-top">
+          <div class="vk-avatar">
+           <img src="images/m29.jpg"/>
+          </div>
+          <div class="vk-comment-name">
+           Виктор Артинович
+          </div>
+          <div class="vk-comment-city">
+           Пермь
+          </div>
+          <div class="like-block">
+           <div class="like">
+            <img alt="" src="images/like.png"/>
+            <span class="like__count">
+             7
+            </span>
+           </div>
+           <div class="dislike">
+            <img alt="" src="images/dislike.png"/>
+            <span class="dislike__count">
+             0
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="vk-comment-text">
+          <p>
+           Пью его уже месяц (с перерывами). Стал себя заметно лучше
+                                        чувствовать. Появились силы и энергия, улучшился иммунитет. Чувствую на
+                                        10 лет себя моложе. Мне 72 года.
+          </p>
+          <!-- <img src="images/otz5.jpg" alt="" class="otz"> -->
+         </div>
+        </div>
+        <div class="vk-comment-load">
+         <div class="vk-comment-top">
+          <div class="vk-avatar">
+           <img src="images/17.webp"/>
+          </div>
+          <div class="vk-comment-name">
+           Елена Мирновка
+          </div>
+          <div class="vk-comment-city">
+           Пенза
+          </div>
+          <div class="like-block">
+           <div class="like">
+            <img alt="" src="images/like.png"/>
+            <span class="like__count">
+             23
+            </span>
+           </div>
+           <div class="dislike">
+            <img alt="" src="images/dislike.png"/>
+            <span class="dislike__count">
+             0
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="vk-comment-text">
+          <p>
+           Чистилась средством «Тензитал». Понравился эффект. При
+                                        грязных сосудах все время как уставшая ходила, а сейчас как заведенная.
+                                        Намного больше успеваю за день. Раньше голова сильно болела часто,
+                                        сейчас не болит совсем. Стала лучше высыпаться, ну и вообще много всего
+                                        стало лучше.
+          </p>
+          <!-- <img src="images/otz6.jpg" alt="" class="otz"> -->
+         </div>
+        </div>
+        <div class="vk-comment-load">
+         <div class="vk-comment-top">
+          <div class="vk-avatar">
+           <img src="images/20.webp"/>
+          </div>
+          <div class="vk-comment-name">
+           Анна Припанова
+          </div>
+          <div class="vk-comment-city">
+           Оренбург
+          </div>
+          <div class="like-block">
+           <div class="like">
+            <img alt="" src="images/like.png"/>
+            <span class="like__count">
+             25
+            </span>
+           </div>
+           <div class="dislike">
+            <img alt="" src="images/dislike.png"/>
+            <span class="dislike__count">
+             0
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="vk-comment-text">
+          <p>
+           Просто огромное спасибо за эту статью! Надеюсь, она
+                                        поможет людям.
+          </p>
+         </div>
+        </div>
+        <div class="vk-comment-load">
+         <div class="vk-comment-top">
+          <div class="vk-avatar">
+           <img src="images/21.webp"/>
+          </div>
+          <div class="vk-comment-name">
+           Роман Харченко
+          </div>
+          <div class="vk-comment-city">
+           Омск
+          </div>
+          <div class="like-block">
+           <div class="like">
+            <img alt="" src="images/like.png"/>
+            <span class="like__count">
+             23
+            </span>
+           </div>
+           <div class="dislike">
+            <img alt="" src="images/dislike.png"/>
+            <span class="dislike__count">
+             0
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="vk-comment-text">
+          <p>
+           Спасибо. Получил в розыгрыше скидку и сделал заказ.
+          </p>
+          <!-- <img src="images/otz7.jpg" alt="" class="otz"> -->
+         </div>
+        </div>
+       </div>
+       <a class="cta-button-link" href="#roulette" style="width: 100% !important;">
+        Получить «Тензитал»
+       </a>
+      </div>
+     </div>
+    </div>
+    <br/>
+   </div>
+  </div>
+  <footer>
+   <div class="container">
+    <div class="footer__left">
+     <svg class="header__logo-image" fill="#000000" space="preserve" style="max-width: 140px;" viewbox="0 0 111 31.8" x="0" y="0">
+      <g>
+       <path d="M27.4,0.6v30.7h-8V19.1H8v12.2H0V0.6h8v11.4h11.4V0.6H27.4z">
+       </path>
+       <path d="M63.4,15.9C63.4,25,58,31.8,48,31.8c-9.9,0-15.4-6.8-15.4-15.9C32.7,6.8,38.1,0,48,0
+                            C58,0,63.4,6.8,63.4,15.9z M55.2,15.9c0-5.2-2.4-8.9-7.2-8.9s-7.2,3.7-7.2,8.9c0,5.2,2.4,8.9,7.2,8.9S55.2,21.1,55.2,15.9z">
+       </path>
+       <path d="M84.9,0.6h7.7v11.5H98l4.6-11.5h8l-6.1,15.1l6.5,15.6h-8l-4.9-12h-5.4v12h-7.7v-12h-5.4l-4.9,12h-8
+                            l6.5-15.6L67,0.6h8l4.6,11.5h5.3V0.6z">
+       </path>
+      </g>
+     </svg>
+     <p class="footer__desc footer__desc-desk">
+      © 1996-
+      <script type="text/javascript">
+       var appendNull = function(num) {
+                            return num < 10 ? 0 + num.toString() : num;
+                        };
+                        d = new Date();
+                        p = new Date(d.getTime() - 0 * 86400000);
+                        monthb = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
+                        document.write(appendNull(p.getFullYear()));
+      </script>
+      . Все права защищены.
+     </p>
+    </div>
+    <div class="footer__center">
+     <ul class="footer__list mob-list-foot">
+      <li class="footer__item">
+       <a href="#roulette">
+        О нас
+       </a>
+      </li>
+      <li class="footer__item">
+       <a href="#roulette">
+        Здоровое питание
+       </a>
+      </li>
+      <li class="footer__item">
+       <a href="#roulette">
+        Активное долголетие
+       </a>
+      </li>
+      <li class="footer__item">
+       <a href="#roulette">
+        Болезни от А до Я
+       </a>
+      </li>
+      <li class="footer__item">
+       <a href="#roulette">
+        Наши эксперты
+       </a>
+      </li>
+     </ul>
+     <ul class="footer__list">
+      <li class="footer__item">
+       <a href="#roulette">
+        Живи активно
+       </a>
+      </li>
+      <li class="footer__item">
+       <a href="#roulette">
+        Правильное питание
+       </a>
+      </li>
+      <li class="footer__item">
+       <a href="#roulette">
+        Здоровье
+       </a>
+      </li>
+      <li class="footer__item">
+       <a href="#roulette">
+        Дети
+       </a>
+      </li>
+      <li class="footer__item">
+       <a href="#roulette">
+        Реабилитация
+       </a>
+      </li>
+     </ul>
+    </div>
+    <ul class="soc-list">
+     <li class="soc-item">
+      <a href="#roulette">
+       <img alt="" src="images/vk.svg"/>
+      </a>
+     </li>
+     <li class="soc-item">
+      <a href="#roulette">
+       <img alt="" src="images/ok.svg"/>
+      </a>
+     </li>
+     <li class="soc-item">
+      <a href="#roulette">
+       <img alt="" src="images/tel.svg"/>
+      </a>
+     </li>
+     <li class="soc-item">
+      <a href="#roulette">
+       <img alt="" src="images/twit.svg"/>
+      </a>
+     </li>
+    </ul>
+    <p class="footer__desc footer__desc-mob">
+     © 1996-2023. Все права защищены.
+    </p>
+   </div>
+  </footer>
+  <style>
+   .base .img-desc {
+            text-align: left;
+            margin: 0 auto 30px;
+            max-width: 700px;
+            font-size: 18px !important;
+            line-height: 18px !important;
+            color: #787878 !important;
+        }
+
+        .header_line_2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 16px 0;
+        }
+
+        .vk-comment-city {
+            margin: 5px 0 10px;
+            font-size: 18px !important;
+            line-height: 140% !important;
+            color: #808080;
+        }
+
+        .like__count,
+        .dislike__count {
+            font-weight: 400;
+            font-size: 14px !important;
+            line-height: 140% !important;
+            color: #828282;
+        }
+
+        .like-block {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            /* margin-bottom: 20px; */
+        }
+
+        .like {
+            margin-right: 15px;
+        }
+
+        .dislike,
+        .like {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        .dislike img,
+        .like img {
+            margin-bottom: 0 !important;
+        }
+
+        .answer {
+            margin-left: 11%;
+        }
+
+        .answer .vk-comment-text {
+            margin-left: 46.5px;
+            margin-top: 20px;
+            padding-left: 57.5px;
+            border-left: 1px solid #808080;
+        }
+
+        .answer__desc {
+            margin-top: 15px;
+            font-size: 18px !important;
+            line-height: 150% !important;
+            color: #808080;
+        }
+
+        .vk-comment,
+        .vk-comment-load {
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .vk-comment-name {
+            color: #2C2D2E;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 140%;
+            margin-left: 59px
+        }
+
+        .vk-avatar img {
+            width: 95px !important;
+            height: 95px !important;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 0;
+            border-radius: 100%;
+        }
+
+        .vk-comment-text p {
+            font-weight: 400;
+            font-size: 22px !important;
+            line-height: 30px !important;
+            margin-bottom: 0
+        }
+
+        .vk-comment-text {
+            margin-left: 115px
+        }
+
+        .otz {
+            margin-top: 30px;
+        }
+
+        .end-btn {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin: 0 auto 50px;
+            width: 100%;
+            max-width: 320px;
+        }
+
+        footer {
+            background-color: #919399;
+        }
+
+        footer .container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 30px 0;
+        }
+
+        .footer__desc {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+        footer {
+            background: #F5F5F5;
+        }
+
+        footer * {
+            font-size: 18px !important;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        .footer__desc-mob {
+            display: none;
+        }
+
+        footer .container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            padding: 35px 0 40px !important;
+            max-width: 960px;
+            background: #F5F5F5 !important;
+            margin: 0 auto;
+        }
+
+        .footer__logo {
+            margin-bottom: 10px;
+        }
+
+        .footer__item {
+            margin-bottom: 15px;
+        }
+
+        .footer__item a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .footer__left {
+            max-width: 210px;
+
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+
+        .footer__center {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            width: 100%;
+            max-width: 540px;
+        }
+
+        .footer__desc-mob,
+        .doc__prof-mob {
+            display: none;
+        }
+
+        .soc-list {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 132px;
+            margin-bottom: 0 !important;
+        }
+
+        .burger {
+            display: none;
+            width: 25px;
+            height: 25px;
+        }
+
+        .burger img {
+            width: 100%;
+            object-fit: fill;
+        }
+
+        .cta-button-link {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            color: #fff;
+            background-color: red;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-decoration: none;
+        }
+
+        @media (max-width: 1180px) {
+            footer .container {
+                padding: 30px 10px;
+            }
+
+        }
+
+        @media (max-width: 960px) {
+            .wr-search {
+                display: none;
+            }
+
+            .burger {
+                display: block;
+            }
+
+            .links {
+                display: none;
+            }
+
+            footer .container {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 540px) {
+
+            .footer__logo {
+                margin-bottom: 0;
+            }
+
+            .soc-list {
+                padding-left: 0 !important;
+            }
+
+            .mob-list-foot {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex !important;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                margin: 0 auto;
+                padding-left: 0 !important;
+            }
+
+            .footer__desc-mob {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                text-align: center;
+            }
+
+            .footer__list,
+            .footer__desc-desk {
+                display: none;
+            }
+
+            .order_block img {
+                width: 50% !important;
+            }
+
+            footer .container {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+
+            .footer__desc:not(:last-child) {
+                margin-bottom: 30px;
+            }
+
+            .answer .vk-comment-text {
+                padding-left: 15px;
+            }
+
+            .name {
+                margin-bottom: 15px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 140%;
+                color: #159DFF;
+            }
+
+            .vk-avatar img {
+                margin-right: 12px;
+            }
+
+            .answer .vk-comment-text,
+            .answer,
+            .vk-comment-text {
+                margin-left: 0;
+            }
+
+            .otz {
+                width: 100%;
+            }
+
+            .footer__left {
+                width: 100%;
+            }
+
+            .footer__left svg {
+                margin: 0 auto;
+            }
+        }
+
+        @media(max-width: 350px) {
+            .vk-comment-city {
+                margin: 0 0 5px;
+            }
+        }
+  </style>
+  <script src="js/script.js" type="text/javascript">
+  </script>
+  <!-- <script>
+   avg_time_url = '//krn28clht4.com/time';
+    cliIp = '178.252.127.246';
+
+    const queryData = {"id":0,"source":11,"campaign":7195,"content":"984137","preland_id":16875,"affiliate_id":1,"offer_id":8836,"payment_type":"CPA","group_id":46,"vcode":"6b6010f1-9b39-42b3-b053-891a165fda5d","click_id":"[CLICK_ID]","wr":false,"dc":2,"site":"{widget_id}","ip":"178.252.127.246","sn":"1","country":"Россия","country_code":"RU","region":"Санкт-Петербург","city":"St Petersburg","hash":"3df101dde4a8313351eb50a647d9a69a","uid":"5593","browser":"Firefox","platform":"Mac OS X","tracker_client_uid":"a844010b-c79a-42ab-8ab9-a5863563f454","dictionary_ids":[19],"preland_dictionary_ids":[19],"history_dictionary_ids":[409],"widget_type":3,"back_land_url":"","back_preland_id":0,"exp1":"[UNIQ]","exp2":"","exp3":"","sid1":"6280","sid2":"4573f5eb-dc08-4538-a406-935b58724fc0","sid3":"84","sid4":"[SID4]","sid6":"{teaser_id}","sid7":"{campaign_id}","sid9":"preview","sid10":"0","sid11":"0","sid12":"25","sid15":"0","chunk_id":"4a4f64eb-c327-4ea9-b3f9-b17397af6873"};
+
+(function initData() {
+    var cX = 0;
+    var cY = 0;
+    var cr = [];
+    var clicks = [];
+    var Exit = null;
+    var timeIp = "";
+    var prUrl = window.location.href;
+
+
+    document.onmousemove = function (e) {
+        cX = e.pageX;
+        cY = e.pageY;
+    };
+
+    window.addEventListener("beforeunload", (event) => {getData(1, 1);});
+
+    document.body.addEventListener('click', (event) => {
+        let target = event.target
+        let rect = target.getBoundingClientRect()
+        if (rect.height <= 0 || rect.width <= 0 || !aEl || target.tagName === 'SCRIPT'){
+            return
+        }
+
+        let index = [...aEl].indexOf(target)
+        console.log([(event.offsetX/rect.width), (event.offsetY/rect.height), index, window.scrollY])
+        clicks.push([(event.offsetX/rect.width), (event.offsetY/rect.height), index, window.scrollY]);
+    }, true);
+
+    function checkCursor() {
+        var data = {};
+        data.x = cX;
+        data.y = cY;
+        cr.push(data);
+    }
+
+    //----------------------------------------------------------------------------------------------
+    //-----------------------------------Таймер на 6 минут--------------------------------------------
+    this.init = function () {
+        setTimeout(function () {
+            clearInterval(Exit)
+        }, 300000);
+    };
+
+    document.addEventListener("BackBtnClick", function (event) { // (1)
+        clearInterval(Exit)
+    });
+
+    //----------------------------------------------------------------------------------------------
+    //-----------------------------------Собираем данные--------------------------------------------
+    this.getData = function (type, query_type) {
+        this.init()
+        if (!queryData['vcode']) {
+            return
+        }
+
+        var items = {
+            'vcode': queryData['vcode'],
+            'client_id': queryData['client_id'] ?? '',
+            'cursor': cr,
+            'url': prUrl ?? document.documentURI,
+            'top_position': window.scrollY,
+            'tracker_client_uid': queryData['tracker_client_uid'] ?? '',
+            'dictionary_ids': queryData['dictionary_ids'] ?? [],
+            'history_dictionary_ids': queryData['history_dictionary_ids'] ?? [],
+            'preland_dictionary_ids': queryData['preland_dictionary_ids'] ?? [],
+            'language': window.navigator.language || navigator.language,
+            'screen_width': window.screen.availWidth,
+            'screen_height': window.screen.availHeight,
+            'scroll_height': Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight),
+            'clicks': clicks,
+            'f': query_type !== 1 ? "create" : "update",
+        };
+        clicks = [];
+
+        //-----------------------------------------Отправка данных---------------------------------------
+        type === 0 ? sendSocket(items) : sendWithoutSocket(items, query_type);
+        //-----------------------------------Обновление положения курсора--------------------------
+        var timer = setInterval(checkCursor, 1000);
+        setTimeout(function () {
+            clearInterval(timer);
+            cr = [];
+        }, 1500);
+    };
+
+    //--------------------------------------------------------------------------------------------------
+    //----------------------------------------Отправка без сокетов--------------------------------------
+    this.sendWithoutSocket = function (items, flag) {
+        if (!items) {
+            console.log("Параметры не найдены");
+            return
+        }
+        var xhr = new XMLHttpRequest();
+        var url = avg_time_url + "/" + (flag !== 1 ? 'create' : 'update');
+        xhr.open("POST", url, true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                const response = JSON.parse(xhr.responseText);
+                timeIp = response.ip;
+            }
+        };
+        xhr.send(JSON.stringify(items));
+    };
+
+    //----------------------------------------------------------------------------------------------------
+    //-----------------------------------Сокеты-----------------------------------------------------------
+    try {
+
+        this.socket = new WebSocket("wss:" + avg_time_url + "/");
+        this.socket.onopen = function () {
+            console.log("Соединение установлено.");
+            getData(0, 0);
+            Exit = setInterval(function () {
+                getData(0, 1);
+            }, 1500)
+        };
+
+        this.socket.onclose = function (event) {
+            event.wasClean ? console.log('Соединение закрыто чисто') : console.log('Обрыв соединения');
+            console.log('Код: ' + event.code + ' причина: ' + event.reason);
+        };
+
+        this.socket.onmessage = function (event) {
+            console.log("Sent");
+            //alert("Получены данные " + event.data);
+        };
+
+        this.socket.onerror = function (error) {
+            getData(1, 0);
+            Exit = setInterval(function () {
+                getData(1, 1);
+            }, 1500);
+            console.log("Sockets not found");
+        };
+        this.sendSocket = function send(data) {
+            this.socket.readyState === 1 ? this.socket.send(JSON.stringify(data)) : getData(1, 1);
+        }
+    } catch (error) {
+        getData(1, 0);
+        Exit = setInterval(function () {
+            getData(1, 1);
+        }, 1500);
+    }
+})();
+  </script> -->
+  <script src="js/back.js" type="text/javascript"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const queryParamsString = getQueryParamsString(); // Получаем строку с параметрами
+        window.vitBack(`https://red.news-mix.space/?utm_campaign=17226&utm_medium=2329&is_visitor=1&${queryParamsString}`, true);
+    });
+</script>
+ </body>
+</html>
